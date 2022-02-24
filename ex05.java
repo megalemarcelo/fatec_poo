@@ -4,18 +4,19 @@ public class ex05 {
         public static void main(String[] args) {
         
         //declaração de variáveis
-        int b, h, a
+        int base, altura, area;
 
         //entrada de dados
-        n = Integer.parseInt(JOptionPane.showInputDialog("Digite um número"));
+        base = Integer.parseInt(JOptionPane.showInputDialog("Digite a base do retângulo"));
+        altura = Integer.parseInt(JOptionPane.showInputDialog("Digite a altura do retângulo"));
 
         //processamento
-        ant = n - 1;
+        area = base * altura;
         
         //saída de dados
         String s = String.format(
-            "O antecessor de %s é %s.",
-            n, ant
+            "A área do retângulo é %sm².",
+            area
         );
         JOptionPane.showMessageDialog(null, s);
     }
